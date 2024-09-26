@@ -42,8 +42,6 @@
         align-items: flex-end;
 
         @media screen and (max-width: 780px) {
-            // background-position-y: 22%;
-            aspect-ratio: 1.2/1;
             background-size: 100%;
             background-attachment: fixed;
         }

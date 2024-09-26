@@ -774,7 +774,6 @@ a {
 }
 @media screen and (max-width: 780px) {
   .personal__image {
-    aspect-ratio: 1.2/1;
     background-size: 100%;
     background-attachment: fixed;
   }
