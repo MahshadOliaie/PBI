@@ -1,0 +1,98 @@
+.cardsSection {
+    &__title {
+        padding: 3% 4.5%;
+        font-size: 30px;
+        padding-top: 80px;
+        padding-bottom: 0px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 22px;
+            padding-top: 110px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        overflow-x: scroll;
+        width: 100%;
+        padding: 20px 0;
+        padding-bottom: 5px;
+        box-sizing: content-box;
+
+        @media screen and (max-width: 600px) {
+            gap: 10px;
+            margin-bottom: -20px;
+        }
+    }
+
+
+    &:first-child {
+        margin-top: -70px;
+    }
+}
+
+.arrows {
+
+    display: flex;
+    align-items: center;
+    padding: 30px 4.5%;
+    gap: 15px;
+
+    &__prev {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        border: 2px solid #0067B8;
+        cursor: pointer;
+        transition: 300ms;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+
+
+        &:hover {
+            background-color: #0067B8;
+            transition: 300ms;
+
+            & path {
+                stroke: white;
+            }
+        }
+    }
+
+    &__next {
+        padding: 10px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #0067B8;
+        cursor: pointer;
+        transition: 300ms;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+
+
+        &:hover {
+            background-color: #0067B8;
+            transition: 300ms;
+
+
+            & path {
+                stroke: white;
+            }
+        }
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

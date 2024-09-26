@@ -1,0 +1,95 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    font-size: 14px;
+    background-color: white;
+    box-shadow: 0 3px 12px -2px rgba(0, 0, 0, 0.27);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 25px;
+    z-index: 4;
+
+    @media screen and (max-width: 1024px) {
+        justify-content: flex-start;
+    }
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+
+
+
+    & a {
+        padding: 20px 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 300ms;
+        flex-shrink: 0;
+
+
+        &:hover {
+            transform: scale(1.03);
+            transition: 300ms;
+        }
+    }
+}
+
+.activeNav {
+
+    @media screen and (max-width: 600px) {
+        padding-left: 8px !important;
+        font-weight: 600;
+        position: relative;
+        display: flex;
+        align-items: center;
+        box-sizing: content-box;
+
+    }
+
+    &::before {
+        content: "";
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: #966244;
+        border-radius: 100px;
+        animation: underline 300ms forwards;
+
+        @media screen and (max-width: 600px) {
+            bottom: unset;
+            width: 3px !important;
+            height: 100%;
+            left: 0;
+        }
+
+    }
+}
+
+@keyframes underline {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+.dnone {
+    display: none;
+}

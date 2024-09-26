@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<script>
+    $(document).ready(function () {
+        $(".progress").each(function () {
+            var $bar = $(this).find(".bar");
+            var $val = $(this).find("span");
+            var perc = parseInt($val.text(), 10);
+
+            $({ p: 0 }).animate({ p: perc }, {
+                duration: 1000,
+                easing: "swing",
+                step: function (p) {
+                    $bar.css({
+                        transform: "rotate(" + (45 + (p * 1.8)) + "deg)", // 100%=180° so: ° = % * 1.8
+                        // 45 is to add the needed rotation to have the green borders at the bottom
+                    });
+                    $val.text(p | 0);
+                }
+            });
+        });
+    });
+</script>
+
+<body class="resumeBody">
+    <section class="personal">
+        <div class="personal__image">
+            <div class="imageShade"></div>
+        </div>
+        <div class="personal__body">
+            <div class="personal__name">
+                <h1>محمدرضا وفائی</h1>
+                <p>هوش تجاری</p>
+            </div>
+            <div class="personal__info">
+                <div>
+                    <p>شهر</p>
+                    <div class="devider"></div>
+                    <p class="font-thin">تهران</p>
+                </div>
+                <div>
+                    <p>سن</p>
+                    <div class="devider"></div>
+                    <p class="font-thin">47</p>
+                </div>
+            </div>
+            <div class="personal__skills">
+                <h3 class="titles">مهارت‌ها</h3>
+                <div class="personal__skills__items">
+                    <div class="personal__skills__skill">
+                        <p>حرفه‌ای</p>
+                        <div class="devider"></div>
+                        <p class="font-medium">Power BI</p>
+                    </div>
+                    <div class="personal__skills__skill">
+                        <p>حرفه‌ای</p>
+                        <div class="devider"></div>
+                        <p class="font-medium">Data mining</p>
+                    </div>
+                    <div class="personal__skills__skill">
+                        <p>حرفه‌ای</p>
+                        <div class="devider"></div>
+                        <p class="font-medium">DAX language</p>
+                    </div>
+                    <div class="personal__skills__skill">
+                        <p>حرفه‌ای</p>
+                        <div class="devider"></div>
+                        <p class="font-medium">M language</p>
+                    </div>
+                    <div class="personal__skills__skill">
+                        <p>حرفه‌ای</p>
+                        <div class="devider"></div>
+                        <p class="font-medium">SAP 4/HANA</p>
+                    </div>
+                    <div class="personal__skills__skill">
+                        <p>حرفه‌ای</p>
+                        <div class="devider"></div>
+                        <p class="font-medium">SQL</p>
+                    </div>
+                    <div class="personal__skills__skill">
+                        <p>حرفه‌ای</p>
+                        <div class="devider"></div>
+                        <p class="font-medium">PYTHON</p>
+                    </div>
+                </div>
+            </div>
+            <div class="personal__contact">
+                <h2>ارتباط با من</h2>
+                <div class="personal__contact__devider"></div>
+                <div class="personal__contact__contents">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="23" viewBox="0 0 23 23" width="23">
+                            <path
+                                d="m17.5627 14.359c-1.5833-.144-2.4469 2.0155-3.5984 2.5914-1.8711 1.0078-5.32555-2.5914-5.32555-2.5914s-3.59837-3.4553-2.73476-5.32684c.71967-1.15175 2.87869-2.01556 2.73476-3.59921-.14394-1.43968-3.3105-6.62253-4.89379-5.182846-3.454436 3.167296-3.74230551 4.463006-3.74230551 7.054436-.14393449 4.46296 5.61346551 10.07776 5.61346551 10.07776.57574.5759 5.61348 5.7587 10.07548 5.6148 2.5908 0 3.8862-.288 7.0528-3.7432 1.4393-1.5837-3.5984-4.751-5.1817-4.8949z"
+                                fill="#fff" />
+                        </svg>
+                        <a href="#">09122124004</a>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="25" viewBox="0 0 25 25" width="25">
+                            <g fill="#fff">
+                                <path
+                                    d="m15.8146 9.18543c1.8305 1.83057 1.8305 4.79857 0 6.62917-1.8306 1.8305-4.7986 1.8305-6.62917 0-1.83057-1.8306-1.83057-4.7986 0-6.62917s4.79857-1.83057 6.62917 0z" />
+                                <path
+                                    d="m17.9687 0h-10.93745c-3.87727 0-7.03125 3.15398-7.03125 7.03125v10.93745c0 3.8773 3.15398 7.0313 7.03125 7.0313h10.93745c3.8773 0 7.0313-3.154 7.0313-7.0313v-10.93745c0-3.87727-3.154-7.03125-7.0313-7.03125zm-5.4687 18.75c-3.4462 0-6.25-2.803-6.25-6.25 0-3.44695 2.8038-6.25 6.25-6.25s6.25 2.80305 6.25 6.25c0 3.447-2.8038 6.25-6.25 6.25zm7.0312-12.5c-.4314 0-.7812-.34981-.7812-.78125 0-.43154.3498-.78125.7812-.78125.4315 0 .7813.34971.7813.78125 0 .43144-.3498.78125-.7813.78125z" />
+                            </g>
+                        </svg>
+                        <a href="instagram.com/power-bi-design">instagram.com/power-bi-design</a>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                            <path
+                                d="M0 2.90404C0 2.06227 0.292801 1.36783 0.878378 0.820707C1.46396 0.273561 2.22523 0 3.16216 0C4.08238 0 4.82689 0.269343 5.39575 0.808081C5.98133 1.36364 6.27413 2.08753 6.27413 2.9798C6.27413 3.78788 5.98971 4.46126 5.42085 5C4.83527 5.55556 4.06564 5.83333 3.11197 5.83333H3.08687C2.16666 5.83333 1.42214 5.55556 0.853282 5C0.284419 4.44444 0 3.74578 0 2.90404ZM0.326255 25V8.13131H5.89768V25H0.326255ZM8.98456 25H14.556V15.5808C14.556 14.9916 14.6229 14.537 14.7568 14.2172C14.991 13.6448 15.3465 13.1608 15.8234 12.7652C16.3002 12.3695 16.8983 12.1717 17.6178 12.1717C19.4916 12.1717 20.4286 13.4428 20.4286 15.9848V25H26V15.3283C26 12.8367 25.4144 10.947 24.2432 9.65909C23.0721 8.37121 21.5245 7.72727 19.6004 7.72727C17.4421 7.72727 15.7606 8.66162 14.556 10.5303V10.5808H14.5309L14.556 10.5303V8.13131H8.98456C9.01801 8.67003 9.03475 10.3451 9.03475 13.1566C9.03475 15.968 9.01801 19.9158 8.98456 25Z"
+                                fill="white" />
+                        </svg>
+                        <a
+                            href="linkedin.com/in/mohammad-reza-vafaei-2550a4a9">linkedin.com/in/mohammad-reza-vafaei-2550a4a9</a>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                            <path
+                                d="M24.245 0.144655L1.21404 9.1051C-0.357732 9.74205 -0.348639 10.6267 0.925665 11.0212L6.83864 12.8822L20.5196 4.17338C21.1664 3.77628 21.7575 3.9899 21.2717 4.42501L10.1874 14.5178H10.1848L10.1874 14.5191L9.77955 20.6684C10.3771 20.6684 10.6408 20.3918 10.9759 20.0655L13.848 17.2477L19.822 21.6998C20.9235 22.3118 21.7146 21.9973 21.9887 20.671L25.9103 2.02403C26.3117 0.400219 25.2959 -0.335018 24.245 0.144655Z"
+                                fill="white" />
+                        </svg>
+                        <a href="t.me/MohammadRezaVafaeie">t.me/MohammadRezaVafaeie</a>
+                        <a href="t.me/powerbidesign">t.me/powerbidesign</a>
+                        <a href="t.me/powerbidesign_QuestionAndAnswer">t.me/powerbidesign_QuestionAndAnswer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="aboutBox">
+        <div class="aboutBox__langs" id="mobileAboutLang">
+            <h3 class="titles">زبان ها</h3>
+            <div class="aboutBox__langs__diagram">
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>70</span>%
+                    <div class="language">
+                        <div class="devider"></div>
+                        <p>اسپانیایی</p>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>100</span>%
+                    <div class="language">
+                        <div class="devider"></div>
+                        <p>فرانسوی</p>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>90</span>%
+                    <div class="language">
+                        <div class="devider"></div>
+                        <p>انگلیسی</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutBox__aboutMe">
+            <h3 class="titles">درباره من</h3>
+            <p>فارغ التحصیل رشته مالی و تحلیل اطلاعات هستم و حدود 26 سال در حوزه های فروش ، مالی و اداری در صنایع مختلفی
+                از جمله تولیدی و صنعتی ، بازرگانی ، پیمانکاری و لیزینگ تجربه فعالیت مدیریتی داشته ام که بر اساس علاقه
+                شخصی به حوزه تحلیل و داده کاوی اطلاعات با استفاده از ابزار هوش تجاری BI ، از سال 1393 موضوع هوش تجاری را
+                با نرم افزار Microsoft Power BI دنبال نموده ام و همواره با استفاده از مشارکت فعال در دوره های آموزشی ،
+                وبینار ها و حضور فعال در شبکه های اجتماعی با برند Power BI Design در این حوزه ، نسبت به بروز رسانی
+                اطلاعات خویش فعالیت داشته و دارم ...</p>
+        </div>
+        <div class="aboutBox__services">
+            <h3 class="titles">خدمات من</h3>
+            <ul>
+                <li> مشاوره ساعتی و یا پروژه محور بر اساس نیاز شما از طریق پلتفرم Google Meet در طول کل ساعات هفته به
+                    متقاضیان داخل یا خارج از کشور</li>
+                <li>تدریس دوره ای شامل 30 ساعت مقدماتی و پیشرفته نرم افزار POWER BI ( تجربه تدریس در مجتمع فنی تهران و
+                    در محل بیش از 10 ها شرکت معتبر داخلی )</li>
+                <li>ارائه کلیه خدمات مشاوره خرید، پشتیبانی شرکتی انواع لایسنس Software Assurance و Premium و Pro نسخه
+                    های پاور بی آی سرویس و ریپورت سرور و انواع کاستم ویژوال های مایکروسافت</li>
+                <li>مشاوره برای استقرار سامانه هوش تجاری BI به شرکت های داخلی</li>
+                <li> اجرای پروژه های هوش تجاری با Power BI برای شرکت های داخلی ( بیش از 10 پروژه انجام شده و در جریان
+                    پشتیبانی )</li>
+            </ul>
+
+        </div>
+
+        <div class="aboutBox__langs">
+            <h3 class="titles">زبان ها</h3>
+            <div class="aboutBox__langs__diagram">
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>70</span>%
+                    <div class="language">
+                        <div class="devider"></div>
+                        <p>اسپانیایی</p>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>100</span>%
+                    <div class="language">
+                        <div class="devider"></div>
+                        <p>فرانسوی</p>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>90</span>%
+                    <div class="language">
+                        <div class="devider"></div>
+                        <p>انگلیسی</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="titles">مشاهده گواهینامه ها </h3>
+        </div>
+    </section>
+
+    <section class="leftBox">
+        <div class="leftBox__langs">
+            <h3 class="titles">زبان ها</h3>
+            <div class="leftBox__langs__diagram">
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>70</span>%
+                    <div class="language">
+                        <div class="devider"></div>
+                        <p>اسپانیایی</p>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>100</span>%
+                    <div class="language">
+                        <div class="devider"></div>
+                        <p>فرانسوی</p>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>90</span>%
+                    <div class="language">
+                        <div class="devider"></div>
+                        <p>انگلیسی</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leftBox__skills">
+            <h3 class="titles">مهارت‌ها</h3>
+            <div class="leftBox__skills__items">
+                <div class="leftBox__skills__skill">
+                    <p>حرفه‌ای</p>
+                    <div class="devider"></div>
+                    <p class="font-medium">Power BI</p>
+                </div>
+                <div class="leftBox__skills__skill">
+                    <p>حرفه‌ای</p>
+                    <div class="devider"></div>
+                    <p class="font-medium">Data mining</p>
+                </div>
+                <div class="leftBox__skills__skill">
+                    <p>حرفه‌ای</p>
+                    <div class="devider"></div>
+                    <p class="font-medium">DAX language</p>
+                </div>
+                <div class="leftBox__skills__skill">
+                    <p>حرفه‌ای</p>
+                    <div class="devider"></div>
+                    <p class="font-medium">M language</p>
+                </div>
+                <div class="leftBox__skills__skill">
+                    <p>حرفه‌ای</p>
+                    <div class="devider"></div>
+                    <p class="font-medium">SAP 4/HANA</p>
+                </div>
+                <div class="leftBox__skills__skill">
+                    <p>حرفه‌ای</p>
+                    <div class="devider"></div>
+                    <p class="font-medium">SQL</p>
+                </div>
+                <div class="leftBox__skills__skill">
+                    <p>حرفه‌ای</p>
+                    <div class="devider"></div>
+                    <p class="font-medium">PYTHON</p>
+                </div>
+            </div>
+        </div>
+        <div class="leftBox__certificates">
+            <h3 class="titles">مشاهده گواهینامه ها </h3>
+        </div>
+    </section>
+
+    <section class="mobileFooter">
+        <div class="mobileFooter__certificates">
+            <h3 class="titles">مشاهده گواهینامه ها </h3>
+        </div>
+        <div class="mobileFooter__contact">
+            <h2>ارتباط با من</h2>
+            <div class="mobileFooter__contact__devider"></div>
+            <div class="mobileFooter__contact__contents">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="23" viewBox="0 0 23 23" width="23">
+                        <path
+                            d="m17.5627 14.359c-1.5833-.144-2.4469 2.0155-3.5984 2.5914-1.8711 1.0078-5.32555-2.5914-5.32555-2.5914s-3.59837-3.4553-2.73476-5.32684c.71967-1.15175 2.87869-2.01556 2.73476-3.59921-.14394-1.43968-3.3105-6.62253-4.89379-5.182846-3.454436 3.167296-3.74230551 4.463006-3.74230551 7.054436-.14393449 4.46296 5.61346551 10.07776 5.61346551 10.07776.57574.5759 5.61348 5.7587 10.07548 5.6148 2.5908 0 3.8862-.288 7.0528-3.7432 1.4393-1.5837-3.5984-4.751-5.1817-4.8949z"
+                            fill="#fff" />
+                    </svg>
+                    <a href="#">09122124004</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="25" viewBox="0 0 25 25" width="25">
+                        <g fill="#fff">
+                            <path
+                                d="m15.8146 9.18543c1.8305 1.83057 1.8305 4.79857 0 6.62917-1.8306 1.8305-4.7986 1.8305-6.62917 0-1.83057-1.8306-1.83057-4.7986 0-6.62917s4.79857-1.83057 6.62917 0z" />
+                            <path
+                                d="m17.9687 0h-10.93745c-3.87727 0-7.03125 3.15398-7.03125 7.03125v10.93745c0 3.8773 3.15398 7.0313 7.03125 7.0313h10.93745c3.8773 0 7.0313-3.154 7.0313-7.0313v-10.93745c0-3.87727-3.154-7.03125-7.0313-7.03125zm-5.4687 18.75c-3.4462 0-6.25-2.803-6.25-6.25 0-3.44695 2.8038-6.25 6.25-6.25s6.25 2.80305 6.25 6.25c0 3.447-2.8038 6.25-6.25 6.25zm7.0312-12.5c-.4314 0-.7812-.34981-.7812-.78125 0-.43154.3498-.78125.7812-.78125.4315 0 .7813.34971.7813.78125 0 .43144-.3498.78125-.7813.78125z" />
+                        </g>
+                    </svg>
+                    <a href="instagram.com/power-bi-design">instagram.com/power-bi-design</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                        <path
+                            d="M0 2.90404C0 2.06227 0.292801 1.36783 0.878378 0.820707C1.46396 0.273561 2.22523 0 3.16216 0C4.08238 0 4.82689 0.269343 5.39575 0.808081C5.98133 1.36364 6.27413 2.08753 6.27413 2.9798C6.27413 3.78788 5.98971 4.46126 5.42085 5C4.83527 5.55556 4.06564 5.83333 3.11197 5.83333H3.08687C2.16666 5.83333 1.42214 5.55556 0.853282 5C0.284419 4.44444 0 3.74578 0 2.90404ZM0.326255 25V8.13131H5.89768V25H0.326255ZM8.98456 25H14.556V15.5808C14.556 14.9916 14.6229 14.537 14.7568 14.2172C14.991 13.6448 15.3465 13.1608 15.8234 12.7652C16.3002 12.3695 16.8983 12.1717 17.6178 12.1717C19.4916 12.1717 20.4286 13.4428 20.4286 15.9848V25H26V15.3283C26 12.8367 25.4144 10.947 24.2432 9.65909C23.0721 8.37121 21.5245 7.72727 19.6004 7.72727C17.4421 7.72727 15.7606 8.66162 14.556 10.5303V10.5808H14.5309L14.556 10.5303V8.13131H8.98456C9.01801 8.67003 9.03475 10.3451 9.03475 13.1566C9.03475 15.968 9.01801 19.9158 8.98456 25Z"
+                            fill="white" />
+                    </svg>
+                    <a
+                        href="linkedin.com/in/mohammad-reza-vafaei-2550a4a9">linkedin.com/in/mohammad-reza-vafaei-2550a4a9</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                        <path
+                            d="M24.245 0.144655L1.21404 9.1051C-0.357732 9.74205 -0.348639 10.6267 0.925665 11.0212L6.83864 12.8822L20.5196 4.17338C21.1664 3.77628 21.7575 3.9899 21.2717 4.42501L10.1874 14.5178H10.1848L10.1874 14.5191L9.77955 20.6684C10.3771 20.6684 10.6408 20.3918 10.9759 20.0655L13.848 17.2477L19.822 21.6998C20.9235 22.3118 21.7146 21.9973 21.9887 20.671L25.9103 2.02403C26.3117 0.400219 25.2959 -0.335018 24.245 0.144655Z"
+                            fill="white" />
+                    </svg>
+                    <a href="t.me/MohammadRezaVafaeie">t.me/MohammadRezaVafaeie</a>
+                    <a href="t.me/powerbidesign">t.me/powerbidesign</a>
+                    <a href="t.me/powerbidesign_QuestionAndAnswer">t.me/powerbidesign_QuestionAndAnswer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

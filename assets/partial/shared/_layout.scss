@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F6F6F6;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.resumeBody {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: regular;
+    background-image: url('/assets/images/resume/bgResume.png');
+    background-size: cover;
+    background-position-x: left;
+
+    @media screen and (max-width: 1100px) {
+        background-image: url('/assets/images/resume/tabletBG.png');
+        height: unset;
+    }
+
+    @media screen and (max-width: 780px){
+        flex-direction: column;
+    }
+
+    & h1 {
+        font-family: fat;
+    }
+
+    & h2 {
+        font-family: heavy;
+    }
+
+    & h3 {
+        font-family: bold;
+        font-size: 1.3rem !important;
+    }
+
+
+    & .titles {
+        position: relative;
+        margin-bottom: 25px;
+        font-size: 1.3rem !important;
+
+        &::after {
+            content: "";
+            height: 3px;
+            border-radius: 20px;
+            width: 60%;
+            position: absolute;
+            bottom: -1px;
+            right: 0;
+            background-color: black;
+        }
+    }
+}
+
+.font-hairline {
+    font-family: hairline;
+}
+
+.font-thin {
+    font-family: thin;
+}
+
+.font-light {
+    font-family: light;
+}
+
+.font-regular {
+    font-family: regular;
+}
+
+.font-medium {
+    font-family: medium;
+}
+
+.font-bold {
+    font-family: bold;
+}
+
+.font-heavy {
+    font-family: heavy;
+}
+
+.font-fat {
+    font-family: fat;
+}
+
+@font-face {
+    font-family: hairline;
+    src: url('/assets/fonts/YekanBakh-Hairline.ttf');
+}
+
+@font-face {
+    font-family: thin;
+    src: url('/assets/fonts/YekanBakh-Thin.ttf');
+}
+
+@font-face {
+    font-family: light;
+    src: url('/assets/fonts/YekanBakh-Light.ttf');
+}
+
+@font-face {
+    font-family: regular;
+    src: url('/assets/fonts/YekanBakh-Regular.ttf');
+}
+
+@font-face {
+    font-family: medium;
+    src: url('/assets/fonts/YekanBakh-Medium.ttf');
+}
+
+@font-face {
+    font-family: bold;
+    src: url('/assets/fonts/YekanBakh-Bold.ttf');
+}
+
+@font-face {
+    font-family: heavy;
+    src: url('/assets/fonts/YekanBakh-Heavy.ttf');
+}
+
+@font-face {
+    font-family: fat;
+    src: url('/assets/fonts/YekanBakh-Fat.ttf');
+}

@@ -1,0 +1,216 @@
+.leftBox  {
+    background-color: rgba(244, 244, 244, 0.95);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 23%;
+    padding: 5% 2%;
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
+
+
+    & h3 {
+        display: inline-block;
+    }
+
+
+    &__skills {
+        width: 100%;
+
+        @media screen and (max-width: 1100px) {
+            display: none;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 12px;
+
+        }
+
+        &__skill {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            font-size: 15px;
+
+            & p {
+                text-wrap: nowrap;
+                margin: 0;
+            }
+
+            & .devider {
+                height: 0.5px;
+                background-color: black;
+                width: 100%;
+            }
+
+        }
+    }
+
+    &__certificates {
+        width: 100%;
+    }
+
+    &__langs {
+        width: 100%;
+
+
+        &__diagram {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}
+
+
+.progress {
+    position: relative;
+    width: 32%;
+    min-width: 65px;
+    max-width: 150px;
+    margin: 4px;
+    float: left;
+    text-align: center;
+    font-family: bold;
+
+
+    & span {
+        font-size: 15px;
+
+        @media screen and (max-width: 1100px){
+            font-size: 18px;
+        }
+    }
+
+    & .language {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+            margin: 2px 0;
+            font-family: medium;
+            font-size: 15px;
+        }
+    }
+
+    & .devider {
+        height: 0.3px;
+        opacity: 40%;
+        width: 65%;
+        margin-top: -2px;
+        background-color: black;
+    }
+}
+
+.barOverflow {
+    /* Wraps the rotating .bar */
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2/1;
+    /* Half circle (overflow) */
+    margin-bottom: -20px;
+    /* bring the numbers up */
+    overflow: hidden;
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid #d8d8d8;
+    /* half gray, */
+    border-bottom-color: black;
+    /* half azure */
+    border-right-color: black;
+
+    @media screen and (max-width: 1100px) {
+        border: 5px solid #ffffff;
+        border-bottom-color: black;
+        /* half azure */
+        border-right-color: black;
+    }
+}
+
+.mobileFooter{
+    background: linear-gradient(-50deg, #363636 50%, #525250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 25px;
+    padding: 5% 8%;
+    width: 100%;
+
+    @media screen and (min-width: 780px) {
+        display: none;
+    }
+
+    &__certificates {
+        width: 100%;
+
+        & h3{
+            display: inline-block !important;
+
+            &::after{
+                background-color: white !important;
+            }
+        }
+    }
+
+    &__contact {
+        width: 100%;
+
+        & h2 {
+            margin: 3px 0;
+            font-size: 1.3rem;
+        }
+
+        &__devider {
+            height: 3px;
+            background-color: white;
+            width: 100%;
+        }
+
+        &__contents {
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px 0;
+
+            & svg {
+                width: 20px;
+            }
+
+            & div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                & a {
+                    font-size: 14px;
+                    font-family: light;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}
