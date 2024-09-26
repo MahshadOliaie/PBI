@@ -15,7 +15,7 @@
     @media screen and (max-width: 780px){
         padding: 10% 3%;
         gap: 25px;
-        background-image: url('/assets/images/resume/mobileBG.png');
+        background-image: url('/assets/images/resume/mobileBG.png') !important;
         background-size: cover;
         background-attachment: fixed;
     }
