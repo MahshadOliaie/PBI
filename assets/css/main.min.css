@@ -44,7 +44,7 @@ a {
   }
 }
 .resumeBody h1 {
-  font-family: fat;
+  font-family: heavy;
 }
 .resumeBody h2 {
   font-family: heavy;
@@ -722,7 +722,7 @@ a {
   color: white;
   gap: 25px;
   width: 21%;
-  min-width: 270px;
+  min-width: 280px;
 }
 @media screen and (max-width: 1100px) {
   .personal {
@@ -751,7 +751,7 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 35px;
+  gap: 40px;
   padding-bottom: 10px;
 }
 @media screen and (max-width: 1100px) {
