@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<!-- Demo styles -->
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #F6F6F6;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #F6F6F6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    body {
+        background: #F6F6F6;
+        color: black;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mySwiper2 {
+        height: 85%;
+        width: 100%;
+    }
+
+    .mySwiper {
+        height: 15%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .picker img {
+        object-fit: cover;
+    }
+
+    .swiper-slide-thumb-active{
+        border: 2px solid black;
+    }
+
+</style>
+
+<body>
+    <!-- Swiper -->
+
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide1.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide2.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide3.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide4.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide5.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide6.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide7.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide8.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide9.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide10.JPG" />
+            </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+    </div>
+    <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper picker">
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide1.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide2.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide3.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide4.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide5.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide6.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide7.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide8.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide9.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide10.JPG" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+
+</body>
+
+</html>
