@@ -1,0 +1,177 @@
+[
+    {
+        "id": 1,
+        "title": "Connect google sheets with Power BI report server by schedual refresh",
+        "slidesNumber": 10,
+        "folderName": "Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh",
+        "categoryId": "c13"
+    },
+    {
+        "id": 2,
+        "title": "Connect one Drive with Power BI report server by schedual refresh",
+        "slidesNumber": 10,
+        "folderName": "Connect_One_Drive_with_Power_BI_Report_Server_by_Schedual_Refresh",
+        "categoryId": "c13"
+    },
+    {
+        "id": 3,
+        "title": "PBI Documentary Bot",
+        "slidesNumber": 3,
+        "folderName": "PBI Documentary Bot",
+        "categoryId": "c12"
+    },
+    {
+        "id": 4,
+        "title": "Convert All of Images Type into Power Query with M Code",
+        "slidesNumber": 9,
+        "folderName": "Convert All of Images Type into Power Query with M Code",
+        "categoryId": "c3"
+    },
+    {
+        "id": 5,
+        "title": "Convert PDF files and View In Dashboards With no restriction",
+        "slidesNumber": 14,
+        "folderName": "Convert PDF files and View In Dashboards With no restriction",
+        "categoryId": "c3"
+    },
+    {
+        "id": 6,
+        "title": "Announcing general availability of Tabular Model Definition Language",
+        "slidesNumber": 4,
+        "folderName": "Announcing_general_availability_of_Tabular_Model_Definition_Language",
+        "categoryId": "c6"
+    },
+    {
+        "id": 7,
+        "title": "New paginated report authoring experience Preview August-5-2024",
+        "slidesNumber": 3,
+        "folderName": "New_paginated_report_authoring_experience_Preview_August_5,_2024",
+        "categoryId": "c10"
+    },
+    {
+        "id": 8,
+        "title": "Microsoft Software License Terms for Power BI Report Server",
+        "slidesNumber": 11,
+        "folderName": "Microsoft Software License Terms for Power BI Report Server",
+        "categoryId": "c8"
+    },
+    {
+        "id": 9,
+        "title": "How to Use Develop Custom Visual For Power BI",
+        "slidesNumber": 10,
+        "folderName": "How to Use Develop Custom Visual For Power BI",
+        "categoryId": "c4"
+    },
+    {
+        "id": 10,
+        "title": "Key Performance Indicator or KPI's",
+        "slidesNumber": 3,
+        "folderName": "Key Performance Indicator or KPI's",
+        "categoryId": "c2"
+    },
+    {
+        "id": 11,
+        "title": "Unlimuited 3000 cell Import Data In Enter Data",
+        "slidesNumber": 9,
+        "folderName": "Unlimuited 3000 cell Import Data In Enter Data",
+        "categoryId": "c2"
+    },
+    {
+        "id": 12,
+        "title": "Power BI Reports Server Log Versions May-2024_2",
+        "slidesNumber": 4,
+        "folderName": "Power BI Reports Server Log Versions May-2024_2",
+        "categoryId": "c13"
+    },
+    {
+        "id": 13,
+        "title": "Transfer Microsoft Project Data directly to Power BI with PYTHON",
+        "slidesNumber": 9,
+        "folderName": "Transfer_Microsoft_Project_Data_directly_to_Power_BI_with_PYTHON",
+        "categoryId": "c1"
+    },
+    {
+        "id": 14,
+        "title": "Create_Dynamic_SSRS_Reports_Using_a_Query_as_an_Input_Parameter",
+        "slidesNumber": 14,
+        "folderName": "Create Dynamic SSRS Reports Using a Query as an Input Parameter",
+        "categoryId": "c12"
+    },
+    {
+        "id": 15,
+        "title": "Shamsi and Miladi DimDate With M Query in Power Query",
+        "slidesNumber": 8,
+        "folderName": "Shamsi and Miladi DimDate With M Query in Power Query",
+        "categoryId": "c11"
+    },
+    {
+        "id": 16,
+        "title": "Create a Slicer to Compare Comogeneous Time Periods With DAX Code",
+        "slidesNumber": 8,
+        "folderName": "Create_a_Slicer_to_Compare_Comogeneous_Time_Periods_With_DAX_Code",
+        "categoryId": "c9"
+    },
+    {
+        "id": 17,
+        "title": "Fetch Data With Parameters With Direct Query Mode In Power Query",
+        "slidesNumber": 15,
+        "folderName": "Fetch_Data_With_Parameters_With_Direct_Query_Mode_In_Power_Query",
+        "categoryId": "c2"
+    },
+    {
+        "id": 18,
+        "title": "Use PBI-Tools Export Data From PBIX File",
+        "slidesNumber": 11,
+        "folderName": "Use PBI-Tools Export Data From PBIX File",
+        "categoryId": "c12"
+    },
+    {
+        "id": 19,
+        "title": "Use Exchange Rate Online Web Scrolling in Power BI with PYTHON Script",
+        "slidesNumber": 9,
+        "folderName": "Use_Exchange_Rate_Online_Web_Scrolling_in_Power_BI_with_PYTHON_Script",
+        "categoryId": "c1"
+    },
+    {
+        "id": 20,
+        "title": "Use Synoptic Designer Panel Visual In Shape Graphics",
+        "slidesNumber": 16,
+        "folderName": "Use Synoptic Designer Panel Visual In Shape Graphics",
+        "categoryId": "c4"
+    },
+    {
+        "id": 21,
+        "title": "Introduction DAX Studio",
+        "slidesNumber": 3,
+        "folderName": "Introduction DAX Studio",
+        "categoryId": "c9"
+    },
+    {
+        "id": 22,
+        "title": "API Service for Retrieving Exchange Rates for All Currencies",
+        "slidesNumber": 10,
+        "folderName": "API Service for Retrieving Exchange Rates for All Currencies",
+        "categoryId": "c8"
+    },
+    {
+        "id": 23,
+        "title": "PBI Design Persian Theme JSON",
+        "slidesNumber": 10,
+        "folderName": "PBI Design Persian Theme JSON",
+        "categoryId": "c4"
+    },
+    {
+        "id": 24,
+        "title": "Power BI Licenses",
+        "slidesNumber": 20,
+        "folderName": "Power BI Licenses",
+        "categoryId": "c8"
+    },
+    {
+        "id": 25,
+        "title": "Power BI Reports Server Log Versions May-2024_1",
+        "slidesNumber": 4,
+        "folderName": "Power BI Reports Server Log Versions May-2024_1",
+        "categoryId": "c13"
+    }
+]
