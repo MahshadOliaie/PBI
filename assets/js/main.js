@@ -1,5 +1,10 @@
 
-
+let cardsData = []
+function getData() {
+    fetch('/assets/data/data.json')
+        .then(res => res.json())
+        .then(data => cardsData = data)
+}
 
 function getCategories() {
     fetch("/assets/data/categories.json")
@@ -35,9 +40,13 @@ function listCategories(data) {
 
 
 
-getCategories()
+async function requests() {
+    getData()
+    await getCategories()
+}
 
 
+requests()
 
 
 function mobileNavbarHandler() {
@@ -87,15 +96,21 @@ function sRight(id) {
 
 function renderSections(data) {
     let template = data.map(item => {
+        let filteredData = cardsData.filter(card => card.categoryId === item.id)
         return `<section class="cardsSection" id="${item.id}">
         <h2 class="cardsSection__title">${item.title}</h2>
         <div class="cardsSection__cards">
-            <div class="cardsSection__cards__card">
+        ${filteredData.map(item => {
+            let itemImages = []
+            for (let i = 1; i <= item.slidesNumber; i++) {
+                itemImages.push(`/assets/images/${item.folderName}/Slide${i}.JPG`)
+            }
+            return ` <div class="cardsSection__cards__card">
                 <div class="cardsSection__cards__card__image">
-                    <img src="" alt="">
+                    <img src="${itemImages[0]}" alt="">
                 </div>
                 <div class="cardsSection__cards__card__about">
-                    <h3 class="cardsSection__cards__card__about__title">Turn ideas into impactful solutions</h3>
+                    <h3 class="cardsSection__cards__card__about__title">${item.title}</h3>
                     <p class="cardsSection__cards__card__about__desc">Embed insights from Power BI across your Power
                         Platform
                         products to build low-code, data-driven solutions that help everyone get more done.</p>
@@ -106,88 +121,10 @@ function renderSections(data) {
                             <path d="M1 1L5 5L1 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <p>Learn more</p>
+                    <p class="cardsSection__cards__card__more__text">Learn more</p>
                 </div>
-            </div>
-
-            <div class="cardsSection__cards__card">
-                <div class="cardsSection__cards__card__image">
-                    <img src="" alt="">
-                </div>
-                <div class="cardsSection__cards__card__about">
-                    <h3 class="cardsSection__cards__card__about__title">Turn ideas into impactful solutions</h3>
-                    <p class="cardsSection__cards__card__about__desc">Embed insights from Power BI across your Power
-                        Platform
-                        products to build low-code, data-driven solutions that help everyone get more done.</p>
-                </div>
-                <div class="cardsSection__cards__card__more">
-                    <div class="cardsSection__cards__card__more__svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                            <path d="M1 1L5 5L1 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p>Learn more</p>
-                </div>
-            </div>
-
-            <div class="cardsSection__cards__card">
-                <div class="cardsSection__cards__card__image">
-                    <img src="" alt="">
-                </div>
-                <div class="cardsSection__cards__card__about">
-                    <h3 class="cardsSection__cards__card__about__title">Turn ideas into impactful solutions</h3>
-                    <p class="cardsSection__cards__card__about__desc">Embed insights from Power BI across your Power
-                        Platform
-                        products to build low-code, data-driven solutions that help everyone get more done.</p>
-                </div>
-                <div class="cardsSection__cards__card__more">
-                    <div class="cardsSection__cards__card__more__svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                            <path d="M1 1L5 5L1 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p>Learn more</p>
-                </div>
-            </div>
-
-            <div class="cardsSection__cards__card">
-                <div class="cardsSection__cards__card__image">
-                    <img src="" alt="">
-                </div>
-                <div class="cardsSection__cards__card__about">
-                    <h3 class="cardsSection__cards__card__about__title">Turn ideas into impactful solutions</h3>
-                    <p class="cardsSection__cards__card__about__desc">Embed insights from Power BI across your Power
-                        Platform
-                        products to build low-code, data-driven solutions that help everyone get more done.</p>
-                </div>
-                <div class="cardsSection__cards__card__more">
-                    <div class="cardsSection__cards__card__more__svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                            <path d="M1 1L5 5L1 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p>Learn more</p>
-                </div>
-            </div>
-            <div class="cardsSection__cards__card">
-                <div class="cardsSection__cards__card__image">
-                    <img src="" alt="">
-                </div>
-                <div class="cardsSection__cards__card__about">
-                    <h3 class="cardsSection__cards__card__about__title">Turn ideas into impactful solutions</h3>
-                    <p class="cardsSection__cards__card__about__desc">Embed insights from Power BI across your Power
-                        Platform
-                        products to build low-code, data-driven solutions that help everyone get more done.</p>
-                </div>
-                <div class="cardsSection__cards__card__more">
-                    <div class="cardsSection__cards__card__more__svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                            <path d="M1 1L5 5L1 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p>Learn more</p>
-                </div>
-            </div>
+            </div>`
+        }).join("")}
         </div>
           <div class="arrows">
                 <div class="arrows__prev" onclick="sLeft('${item.id}')">
@@ -210,6 +147,8 @@ function renderSections(data) {
 
     document.querySelector(".sectionsContainer").innerHTML = template
     observer()
+
+
 }
 
 

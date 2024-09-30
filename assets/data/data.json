@@ -50,9 +50,9 @@
     },
     {
         "id": 8,
-        "title": "Microsoft Software License Terms for Power BI Report Server",
+        "title": "Microsoft Software License Terms for Power BI Report Server ",
         "slidesNumber": 11,
-        "folderName": "Microsoft Software License Terms for Power BI Report Server",
+        "folderName": "Microsoft Software License Terms for Power BI Report Server ",
         "categoryId": "c8"
     },
     {
@@ -67,7 +67,7 @@
         "title": "Key Performance Indicator or KPI's",
         "slidesNumber": 3,
         "folderName": "Key Performance Indicator or KPI's",
-        "categoryId": "c2"
+        "categoryId": "c5"
     },
     {
         "id": 11,
@@ -92,9 +92,9 @@
     },
     {
         "id": 14,
-        "title": "Create_Dynamic_SSRS_Reports_Using_a_Query_as_an_Input_Parameter",
+        "title": "Create Dynamic SSRS Reports Using a Query as an Input Parameter",
         "slidesNumber": 14,
-        "folderName": "Create Dynamic SSRS Reports Using a Query as an Input Parameter",
+        "folderName": "Create_Dynamic_SSRS_Reports_Using_a_Query_as_an_Input_Parameter",
         "categoryId": "c12"
     },
     {
