@@ -24,10 +24,6 @@
         "title": "PBI General"
     },
     {
-        "id": "c7",
-        "title": "Downloads"
-    },
-    {
         "id": "c8",
         "title": "Licenses"
     },
@@ -50,5 +46,9 @@
     {
         "id": "c13",
         "title": "PBI Report Server"
+    },
+    {
+        "id": "c7",
+        "title": "Downloads"
     }
 ]

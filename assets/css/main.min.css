@@ -444,6 +444,9 @@ a {
   padding: 5px 0;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 @media screen and (max-width: 600px) {
   .cardsSection__cards {
