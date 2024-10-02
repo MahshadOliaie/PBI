@@ -13,6 +13,7 @@
         background-image: url('/assets/images/resume/tabletBG.png');
         height: unset;
     }
+
     @media screen and (max-width: 600px) {
         background-image: url('/assets/images/resume/mobileBG.png');
         height: unset;
@@ -21,9 +22,14 @@
     & .titles {
         position: relative;
         margin: 0 10%;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         font-family: medium;
         display: inline-block;
+
+        @media screen and (min-width: 2000px) {
+            font-size: 2.5rem !important;
+
+        }
 
         &::after {
             content: "";
@@ -45,6 +51,10 @@
         width: 90%;
         margin: auto;
         gap: 20px;
+
+        @media screen and (min-width: 2000px) {
+            gap: 30px;
+        }
     }
 
     &__card {
@@ -69,23 +79,27 @@
 
         }
 
-        &:hover {
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
-            transition: 600ms;
+        // &:hover {
+        //     box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
+        //     transition: 600ms;
 
 
-            .certificatePage__card__image {
-                & img {
-                    transform: scale(1.05);
-                    transition: 600ms;
-                }
-            }
-        }
+        //     .certificatePage__card__image {
+        //         & img {
+        //             transform: scale(1.05);
+        //             transition: 600ms;
+        //         }
+        //     }
+        // }
 
         &__title {
             height: 30%;
             font-family: medium;
             text-align: center;
+
+            @media screen and (min-width: 2000px) {
+                font-size: 1.2rem !important;
+            }
         }
 
         &__image {

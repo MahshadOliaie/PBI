@@ -46,12 +46,27 @@ a {
 .resumeBody h1 {
   font-family: heavy;
 }
+@media screen and (min-width: 2000px) {
+  .resumeBody h1 {
+    font-size: 2.4rem;
+  }
+}
 .resumeBody h2 {
   font-family: heavy;
+}
+@media screen and (min-width: 2000px) {
+  .resumeBody h2 {
+    font-size: 2.2rem !important;
+  }
 }
 .resumeBody h3 {
   font-family: bold;
   font-size: 1.3rem !important;
+}
+@media screen and (min-width: 2000px) {
+  .resumeBody h3 {
+    font-size: 2rem !important;
+  }
 }
 .resumeBody .titles {
   position: relative;
@@ -67,6 +82,16 @@ a {
   bottom: -1px;
   right: 0;
   background-color: black;
+}
+@media screen and (min-width: 2000px) {
+  .resumeBody .titles {
+    font-size: 2.3rem !important;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .resumeBody p, .resumeBody a, .resumeBody li {
+    font-size: 18px;
+  }
 }
 
 .font-hairline {
@@ -798,6 +823,11 @@ a {
     width: 100%;
   }
 }
+@media screen and (min-width: 2000px) {
+  .personal {
+    min-width: 380px;
+  }
+}
 .personal__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1034,6 +1064,11 @@ a {
 .personal__contact__contents div a:hover {
   text-decoration: underline;
 }
+@media screen and (min-width: 2000px) {
+  .personal__contact__contents div a {
+    font-size: 17px;
+  }
+}
 
 .leftBox {
   background-color: rgba(244, 244, 244, 0.95);
@@ -1096,6 +1131,11 @@ a {
   width: 100%;
   font-size: 15px;
 }
+@media screen and (min-width: 2000px) {
+  .leftBox__skills__skill {
+    font-size: 18px;
+  }
+}
 .leftBox__skills__skill p {
   text-wrap: nowrap;
   margin: 0;
@@ -1147,6 +1187,11 @@ a {
     font-size: 18px;
   }
 }
+@media screen and (min-width: 2000px) {
+  .progress span {
+    font-size: 25px;
+  }
+}
 .progress .language {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1163,6 +1208,11 @@ a {
   margin: 2px 0;
   font-family: medium;
   font-size: 15px;
+}
+@media screen and (min-width: 2000px) {
+  .progress .language p {
+    font-size: 18px;
+  }
 }
 .progress .devider {
   height: 0.3px;
@@ -1290,6 +1340,11 @@ a {
 .certificates {
   cursor: pointer;
 }
+@media screen and (min-width: 2000px) {
+  .certificates a {
+    font-size: 2.4rem;
+  }
+}
 .certificates::after {
   -webkit-transition: 500ms;
   transition: 500ms;
@@ -1308,9 +1363,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1445,9 +1500,14 @@ a {
 .certificatePage .titles {
   position: relative;
   margin: 0 10%;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-family: medium;
   display: inline-block;
+}
+@media screen and (min-width: 2000px) {
+  .certificatePage .titles {
+    font-size: 2.5rem !important;
+  }
 }
 .certificatePage .titles::after {
   content: "";
@@ -1474,6 +1534,11 @@ a {
   width: 90%;
   margin: auto;
   gap: 20px;
+}
+@media screen and (min-width: 2000px) {
+  .certificatePage__container {
+    gap: 30px;
+  }
 }
 .certificatePage__card {
   -ms-flex-negative: 0;
@@ -1509,22 +1574,15 @@ a {
     transition: 600ms;
   }
 }
-.certificatePage__card:hover {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
-  -webkit-transition: 600ms;
-  transition: 600ms;
-}
-.certificatePage__card:hover .certificatePage__card__image img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: 600ms;
-  transition: 600ms;
-}
 .certificatePage__card__title {
   height: 30%;
   font-family: medium;
   text-align: center;
+}
+@media screen and (min-width: 2000px) {
+  .certificatePage__card__title {
+    font-size: 1.2rem !important;
+  }
 }
 .certificatePage__card__image {
   background-color: #D9D9D9;

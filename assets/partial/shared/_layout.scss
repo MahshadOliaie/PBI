@@ -30,23 +30,35 @@ a {
         height: unset;
     }
 
-    @media screen and (max-width: 780px){
+    @media screen and (max-width: 780px) {
         flex-direction: column;
     }
 
     & h1 {
         font-family: heavy;
+
+        @media screen and (min-width: 2000px) {
+            font-size: 2.4rem;
+        }
+
     }
 
     & h2 {
         font-family: heavy;
+
+        @media screen and (min-width: 2000px) {
+            font-size: 2.2rem !important;
+        }
     }
 
     & h3 {
         font-family: bold;
         font-size: 1.3rem !important;
-    }
 
+        @media screen and (min-width: 2000px) {
+            font-size: 2rem !important;
+        }
+    }
 
     & .titles {
         position: relative;
@@ -62,6 +74,16 @@ a {
             bottom: -1px;
             right: 0;
             background-color: black;
+        }
+
+        @media screen and (min-width: 2000px) {
+            font-size: 2.3rem !important;
+        }
+    }
+
+    & p , & a , & li{
+        @media screen and (min-width: 2000px) {
+            font-size: 18px;
         }
     }
 }
