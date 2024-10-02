@@ -161,9 +161,12 @@
         &__skill {
             display: flex;
             align-items: center;
+            justify-content: flex-end;
             gap: 10px;
             width: 100%;
-            font-size: 15.6px;
+            border-bottom: 0.5px solid white;
+            padding: 2px 5px;
+
 
             & p {
                 text-wrap: nowrap;

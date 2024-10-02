@@ -1001,9 +1001,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   gap: 10px;
   width: 100%;
-  font-size: 15.6px;
+  border-bottom: 0.5px solid white;
+  padding: 2px 5px;
 }
 .personal__skills__skill p {
   text-wrap: nowrap;
@@ -1088,6 +1092,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-width: 23%;
+  max-width: 300px !important;
   padding: 5% 2%;
 }
 @media screen and (max-width: 1100px) {
@@ -1127,13 +1132,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   gap: 10px;
   width: 100%;
-  font-size: 15px;
+  border-bottom: 0.5px solid black;
+  padding: 2px 5px;
 }
 @media screen and (min-width: 2000px) {
   .leftBox__skills__skill {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 .leftBox__skills__skill p {
