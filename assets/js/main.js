@@ -115,7 +115,7 @@ function renderSections(data) {
                         Platform
                         products to build low-code, data-driven solutions that help everyone get more done.</p>
                 </div>
-                <div class="cardsSection__cards__card__more">
+                <div class="cardsSection__cards__card__more" onclick="showData(${item.id})">
                     <div class="cardsSection__cards__card__more__svg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
                             <path d="M1 1L5 5L1 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
@@ -177,3 +177,12 @@ function observer() {
 
 }
 
+
+async function showData(id) {
+    let data = cardsData.find(item => item.id === id)
+    console.log(data)
+    localStorage.clear()
+    localStorage.setItem("currentFile" , JSON.stringify(data))
+
+    await window.location.assign("/slides.html")
+}
