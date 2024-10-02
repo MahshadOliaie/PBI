@@ -987,10 +987,11 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 .personal__contact__contents svg {
-  width: 20px;
+  width: 25px;
+  margin-bottom: 3px;
 }
 .personal__contact__contents div {
   display: -webkit-box;
@@ -1000,12 +1001,15 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3px;
+  gap: 5px;
 }
 .personal__contact__contents div a {
-  font-size: 13px;
+  font-size: 14px;
   font-family: light;
   line-height: 1.2;
+}
+.personal__contact__contents div a:hover {
+  text-decoration: underline;
 }
 
 .leftBox {
@@ -1235,10 +1239,11 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 15px;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 .mobileFooter__contact__contents svg {
-  width: 20px;
+  width: 25px;
+  margin-bottom: 5px;
 }
 .mobileFooter__contact__contents div {
   display: -webkit-box;
@@ -1254,6 +1259,9 @@ a {
   font-size: 14px;
   font-family: light;
   line-height: 1.2;
+}
+.mobileFooter__contact__contents div a:hover {
+  text-decoration: underline;
 }
 
 .certificates {
