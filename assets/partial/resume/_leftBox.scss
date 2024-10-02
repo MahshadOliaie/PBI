@@ -1,4 +1,4 @@
-.leftBox  {
+.leftBox {
     background-color: rgba(244, 244, 244, 0.95);
     backdrop-filter: blur(5px);
     display: flex;
@@ -89,7 +89,7 @@
     & span {
         font-size: 15px;
 
-        @media screen and (max-width: 1100px){
+        @media screen and (max-width: 1100px) {
             font-size: 18px;
         }
     }
@@ -149,7 +149,7 @@
     }
 }
 
-.mobileFooter{
+.mobileFooter {
     background: linear-gradient(-50deg, #363636 50%, #525250);
     display: flex;
     flex-direction: column;
@@ -166,12 +166,14 @@
     &__certificates {
         width: 100%;
 
-        & h3{
+        & h3 {
             display: inline-block !important;
 
-            &::after{
+            &::after {
                 background-color: white !important;
+                transition: 500ms;
             }
+
         }
     }
 
@@ -211,6 +213,21 @@
                     line-height: 1.2;
                 }
             }
+        }
+    }
+}
+
+.certificates {
+    cursor: pointer;
+    
+    &::after {
+        transition: 500ms;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+            transition: 500ms;
         }
     }
 }

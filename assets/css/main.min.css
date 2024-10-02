@@ -1211,6 +1211,8 @@ a {
 }
 .mobileFooter__certificates h3::after {
   background-color: white !important;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 .mobileFooter__contact {
   width: 100%;
@@ -1252,6 +1254,19 @@ a {
   font-size: 14px;
   font-family: light;
   line-height: 1.2;
+}
+
+.certificates {
+  cursor: pointer;
+}
+.certificates::after {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.certificates:hover::after {
+  width: 100%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .aboutBox {
@@ -1371,4 +1386,138 @@ a {
           justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+}
+
+.certificatePage {
+  min-height: 100vh;
+  font-family: regular;
+  background-image: url("/assets/images/resume/bgResume.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: left;
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  padding: 40px 0;
+}
+@media screen and (max-width: 1100px) {
+  .certificatePage {
+    background-image: url("/assets/images/resume/tabletBG.png");
+    height: unset;
+  }
+}
+@media screen and (max-width: 600px) {
+  .certificatePage {
+    background-image: url("/assets/images/resume/mobileBG.png");
+    height: unset;
+  }
+}
+.certificatePage .titles {
+  position: relative;
+  margin: 0 10%;
+  margin-bottom: 25px;
+  font-family: medium;
+  display: inline-block;
+}
+.certificatePage .titles::after {
+  content: "";
+  height: 3px;
+  border-radius: 20px;
+  width: 60%;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  background-color: black;
+}
+.certificatePage__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin: auto;
+  gap: 20px;
+}
+.certificatePage__card {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background-color: rgba(244, 244, 244, 0.95);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+  min-width: 300px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .certificatePage__card {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.23);
+    -webkit-transition: 600ms;
+    transition: 600ms;
+  }
+}
+.certificatePage__card:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+.certificatePage__card:hover .certificatePage__card__image img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+.certificatePage__card__title {
+  height: 30%;
+  font-family: medium;
+  text-align: center;
+}
+.certificatePage__card__image {
+  background-color: #D9D9D9;
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .certificatePage__card__image {
+    border-radius: 29.5;
+  }
+}
+.certificatePage__card__image img {
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-transition: 600ms;
+  transition: 600ms;
 }/*# sourceMappingURL=main.min.css.map */

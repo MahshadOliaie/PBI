@@ -1,0 +1,112 @@
+.certificatePage {
+
+    min-height: 100vh;
+    font-family: regular;
+    background-image: url('/assets/images/resume/bgResume.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: left;
+    backdrop-filter: blur(60px);
+    padding: 40px 0;
+
+    @media screen and (max-width: 1100px) {
+        background-image: url('/assets/images/resume/tabletBG.png');
+        height: unset;
+    }
+    @media screen and (max-width: 600px) {
+        background-image: url('/assets/images/resume/mobileBG.png');
+        height: unset;
+    }
+
+    & .titles {
+        position: relative;
+        margin: 0 10%;
+        margin-bottom: 25px;
+        font-family: medium;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            height: 3px;
+            border-radius: 20px;
+            width: 60%;
+            position: absolute;
+            bottom: -1px;
+            right: 0;
+            background-color: black;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+
+    &__card {
+        flex-shrink: 0;
+        // border-radius: 43px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        background-color: rgba(244, 244, 244, 0.95);
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        min-width: 300px;
+        cursor: pointer;
+
+        @media screen and (max-width: 600px) {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.23);
+            // border-radius: 40px;
+            transition: 600ms;
+
+        }
+
+        &:hover {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
+            transition: 600ms;
+
+
+            .certificatePage__card__image {
+                & img {
+                    transform: scale(1.05);
+                    transition: 600ms;
+                }
+            }
+        }
+
+        &__title {
+            height: 30%;
+            font-family: medium;
+            text-align: center;
+        }
+
+        &__image {
+            background-color: #D9D9D9;
+            // border-radius: 32.5px;
+            width: 100%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            @media screen and (max-width: 600px) {
+                border-radius: 29.5;
+            }
+
+            & img {
+                min-height: 100%;
+                min-width: 100%;
+                transition: 600ms;
+            }
+        }
+    }
+}
