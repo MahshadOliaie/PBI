@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #F6F6F6;
-  margin-bottom: 40px;
 }
 
 a {
@@ -1211,7 +1210,7 @@ a {
 .progress {
   position: relative;
   width: 32%;
-  min-width: 65px;
+  min-width: 70px;
   max-width: 150px;
   margin: 4px;
   float: left;
