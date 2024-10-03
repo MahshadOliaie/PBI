@@ -1,33 +1,46 @@
 .slider {
-    background-image: url('/assets/images/BG.png');
-    background-size: cover;
-    height: 75vh;
+    background: linear-gradient(to bottom , #ACACAC , #CACACA);
+    // height: 75vh;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     padding: 4%;
     margin-top: 75px;
 
     @media screen and (max-width: 1024px) {
         margin-top: 65px;
-        background-position: center;
     }
 
     @media screen and (max-width: 600px) {
         margin-top: 60px;
-        background-position: calc(55% - 20px);
+    }
+
+    &__image{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media screen and (max-width: 1024px) {
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        & img{
+            width: 70%;
+
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+                max-width: 730px;
+            }
+        }
     }
 
     &__text {
-        width: 45%;
+        margin-top: -100px;
 
         @media screen and (max-width: 1024px) {
-            width: 53%;
-        }
-
-        @media screen and (max-width: 600px) {
-            width: 65%;
+            margin-top: 0;
         }
 
         & img {
@@ -45,8 +58,8 @@
 
 
         & h1 {
-            font-size: 45px;
-            margin: 0;
+            font-size: 40px;
+            margin: 5px 0;
 
             @media screen and (max-width: 1024px) {
                 font-size: 35px;
@@ -60,11 +73,7 @@
         & p {
             line-height: 1.7;
             font-weight: lighter;
-            font-size: 18px;
-
-            @media screen and (max-width: 1024px) {
-                font-size: 16px;
-            }
+            margin-top: 0;
 
             @media screen and (max-width: 600px) {
                 font-size: 15px;

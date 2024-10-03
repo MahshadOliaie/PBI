@@ -261,45 +261,66 @@ a {
 }
 
 .slider {
-  background-image: url("/assets/images/BG.png");
-  background-size: cover;
-  height: 75vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ACACAC), to(#CACACA));
+  background: linear-gradient(to bottom, #ACACAC, #CACACA);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 4%;
   margin-top: 75px;
 }
 @media screen and (max-width: 1024px) {
   .slider {
     margin-top: 65px;
-    background-position: center;
   }
 }
 @media screen and (max-width: 600px) {
   .slider {
     margin-top: 60px;
-    background-position: calc(55% - 20px);
+  }
+}
+.slider__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media screen and (max-width: 1024px) {
+  .slider__image {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 0;
+  }
+}
+.slider__image img {
+  width: 70%;
+}
+@media screen and (max-width: 1024px) {
+  .slider__image img {
+    width: 100%;
+    max-width: 730px;
   }
 }
 .slider__text {
-  width: 45%;
+  margin-top: -100px;
 }
 @media screen and (max-width: 1024px) {
   .slider__text {
-    width: 53%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .slider__text {
-    width: 65%;
+    margin-top: 0;
   }
 }
 .slider__text img {
@@ -317,8 +338,8 @@ a {
   }
 }
 .slider__text h1 {
-  font-size: 45px;
-  margin: 0;
+  font-size: 40px;
+  margin: 5px 0;
 }
 @media screen and (max-width: 1024px) {
   .slider__text h1 {
@@ -333,12 +354,7 @@ a {
 .slider__text p {
   line-height: 1.7;
   font-weight: lighter;
-  font-size: 18px;
-}
-@media screen and (max-width: 1024px) {
-  .slider__text p {
-    font-size: 16px;
-  }
+  margin-top: 0;
 }
 @media screen and (max-width: 600px) {
   .slider__text p {
