@@ -111,9 +111,7 @@ function renderSections(data) {
                 </div>
                 <div class="cardsSection__cards__card__about">
                     <h3 class="cardsSection__cards__card__about__title">${item.title}</h3>
-                    <p class="cardsSection__cards__card__about__desc">Embed insights from Power BI across your Power
-                        Platform
-                        products to build low-code, data-driven solutions that help everyone get more done.</p>
+                    <p class="cardsSection__cards__card__about__desc">${item.desc.slice(0,140)}${(item.desc)?`...<span class="shadow"></span>`:``}</p>
                 </div>
                 <div class="cardsSection__cards__card__more" onclick="showData(${item.id})">
                     <div class="cardsSection__cards__card__more__svg">

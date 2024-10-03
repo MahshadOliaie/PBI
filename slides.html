@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Power BI Design</title>
     <script src="/assets/js/slides.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <!-- Demo styles -->
@@ -18,8 +19,6 @@
 
     body {
         background: #F6F6F6;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
         color: black;
         margin: 0;
         padding: 0;
@@ -50,6 +49,7 @@
         background: #F6F6F6;
         color: black;
     }
+
 
     .swiper {
         width: 100%;
@@ -95,14 +95,85 @@
         object-fit: cover;
     }
 
-    .swiper-slide-thumb-active{
+    .swiper-slide-thumb-active {
         border: 2px solid black;
     }
 
+    .slide__about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5%;
+
+    }
+
+    .slide__about>div {
+        max-width: 70%;
+        padding: 10px 0;
+    }
+
+    @media screen and (max-width: 900px) {
+        .slide__about {
+            flex-direction: column;
+            align-items: baseline;
+        }
+
+        .slide__about>div {
+            max-width: unset;
+        }
+
+        .swiper-button-next , .swiper-button-prev{
+            display: none;
+        }
+    }
+
+    .slide__about a {
+        display: flex;
+        align-items: center;
+        background-color: gainsboro;
+        padding: 5px 15px;
+        padding-left: 10px;
+        transition: 300ms;
+
+    }
+
+    .slide__about a:hover {
+        transition: 300ms;
+        background-color: rgb(194, 194, 194);
+        transform: scale(1.03);
+    }
 </style>
 
 <body>
-    <!-- Swiper -->
+
+    <header class="header" style="position: static;">
+        <div class="header__logo">
+            <div class="header__logo__image">
+                <img src="/assets/images/personalLogo.png" alt="logo">
+            </div>
+            <p>POWER BI <br> DESIGN</p>
+        </div>
+        <div class="header__nav">
+            <a href="/aboutMe.html" target="_blank">About Me</a>
+        </div>
+    </header>
+
+    <section class="slide__about">
+        <div>
+            <h1 class="slide__about__title">Connect google sheets with Power BI report server by schedual refresh</h1>
+            <p class="slide__about__desc">With this guide and the necessary tricks, you can access Excel data in various
+                formats live from cloud platforms like Google Sheets, and set up automatic updates. You can also
+                schedule automatic updates with Power BI Report Server to access cloud data continuously.</p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1uEIdt9QxSR2uWYHRBSYF58n4WeX3GjKV?usp=sharing"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M12.0003 16C11.8687 16.0008 11.7382 15.9756 11.6164 15.9258C11.4945 15.876 11.3837 15.8027 11.2903 15.71L7.29026 11.71C7.12644 11.5187 7.04083 11.2727 7.05055 11.021C7.06027 10.7693 7.1646 10.5306 7.3427 10.3525C7.52079 10.1744 7.75953 10.07 8.01121 10.0603C8.26288 10.0506 8.50896 10.1362 8.70026 10.3L12.0003 13.59L15.2903 10.3C15.4816 10.1362 15.7276 10.0506 15.9793 10.0603C16.231 10.07 16.4697 10.1744 16.6478 10.3525C16.8259 10.5306 16.9303 10.7693 16.94 11.021C16.9497 11.2727 16.8641 11.5187 16.7003 11.71L12.7003 15.71C12.514 15.8948 12.2626 15.9989 12.0003 16Z"
+                    fill="#434343" />
+                <path
+                    d="M12 16C11.7348 16 11.4804 15.8946 11.2929 15.7071C11.1054 15.5196 11 15.2652 11 15V5C11 4.73478 11.1054 4.48043 11.2929 4.29289C11.4804 4.10536 11.7348 4 12 4C12.2652 4 12.5196 4.10536 12.7071 4.29289C12.8946 4.48043 13 4.73478 13 5V15C13 15.2652 12.8946 15.5196 12.7071 15.7071C12.5196 15.8946 12.2652 16 12 16ZM19 20H5C4.73478 20 4.48043 19.8946 4.29289 19.7071C4.10536 19.5196 4 19.2652 4 19C4 18.7348 4.10536 18.4804 4.29289 18.2929C4.48043 18.1054 4.73478 18 5 18H19C19.2652 18 19.5196 18.1054 19.7071 18.2929C19.8946 18.4804 20 18.7348 20 19C20 19.2652 19.8946 19.5196 19.7071 19.7071C19.5196 19.8946 19.2652 20 19 20Z"
+                    fill="#434343" />
+            </svg> Download</a>
+    </section>
 
     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
         <div class="swiper-wrapper">
@@ -147,8 +218,8 @@
                     src="/assets/images/Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh/Slide10.JPG" />
             </div>
         </div>
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
+        <div class="swiper-button-next" style="color: black;"></div>
+        <div class="swiper-button-prev" style="color: black;"></div>
     </div>
     <div thumbsSlider="" class="swiper mySwiper">
         <div class="swiper-wrapper picker">

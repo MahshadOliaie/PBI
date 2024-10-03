@@ -3,175 +3,225 @@
         "id": 1,
         "title": "Connect google sheets with Power BI report server by schedual refresh",
         "slidesNumber": 10,
+        "desc": "With this guide and the necessary tricks, you can access Excel data in various formats live from cloud platforms like Google Sheets, and set up automatic updates. You can also schedule automatic updates with Power BI Report Server to access cloud data continuously.",
         "folderName": "Connect_Google_Sheets_with_Power_BI_Report_Server_by_Schedual_Refresh",
-        "categoryId": "c13"
+        "downloadLink": "",
+        "categoryId": "c2"
     },
     {
         "id": 2,
         "title": "Connect one Drive with Power BI report server by schedual refresh",
         "slidesNumber": 10,
+        "desc": "With this guide and the necessary tricks, you can access Excel data in various formats live from cloud platforms like OneDrive, and set up automatic updates. You can also schedule automatic updates with Power BI Report Server to continuously access cloud data.",
         "folderName": "Connect_One_Drive_with_Power_BI_Report_Server_by_Schedual_Refresh",
-        "categoryId": "c13"
+        "downloadLink": "",
+        "categoryId": "c2"
     },
     {
         "id": 3,
         "title": "PBI Documentary Bot",
         "slidesNumber": 3,
+        "desc": "In light of the ongoing development and release of educational content from the Power BI Design brand, we have created a public Telegram bot for easy access. This bot provides quick and convenient access to all published and upcoming educational materials for both new and existing Power BI users.",
         "folderName": "PBI Documentary Bot",
-        "categoryId": "c12"
+        "downloadLink": "https://drive.google.com/drive/folders/1Te0H9DJvGwK0vnnsCTBn7_4S6wvTjX4u?usp=sharing",
+        "categoryId": "c6"
     },
     {
         "id": 4,
         "title": "Convert All of Images Type into Power Query with M Code",
         "slidesNumber": 9,
+        "desc": "When importing images into Power BI using M Code to convert them to Base64, challenges like standardizing dimensions and formats (such as JPG, BMP, PNG, Jfif, GIF, etc.) often arise. This tutorial offers a technique to effortlessly import any static or animated image without concerns about size or file extensions, enhancing your projects quickly.",
         "folderName": "Convert All of Images Type into Power Query with M Code",
+        "downloadLink": "https://drive.google.com/drive/folders/1yDib4O8vssFaH5BUG74wtICbz7dnv_RZ?usp=sharing",
         "categoryId": "c3"
     },
     {
         "id": 5,
-        "title": "Convert PDF files and View In Dashboards With no restriction",
+        "title": "Convert PDF files and View In Dashboards",
         "slidesNumber": 14,
+        "desc": "To quickly access data and reference information, we often need to display related content alongside dashboards, such as KPIs in PDF format. However, this comes with limitations like PDF file size and the inability to display text strings longer than 30,000 characters in the PDF file.",
         "folderName": "Convert PDF files and View In Dashboards With no restriction",
+        "downloadLink": "https://drive.google.com/drive/folders/1PKjtd4TUxJUR_3dpTe0PqhrFW6QwLQ6G?usp=sharing",
         "categoryId": "c3"
     },
     {
         "id": 6,
-        "title": "Announcing general availability of Tabular Model Definition Language",
+        "title": "Announcing general availability of Tabular Model Definition Language (TMDL) ",
         "slidesNumber": 4,
+        "desc": "The Tabular Model Definition Language (TMDL) is a powerful new feature in Power BI, now publicly available. It allows developers and data analysts to define, optimize, and manage tabular data models more efficiently, offering advanced capabilities like defining relationships, calculations, and functions for greater flexibility and control over complex models.",
         "folderName": "Announcing_general_availability_of_Tabular_Model_Definition_Language",
-        "categoryId": "c6"
+        "downloadLink": "",
+        "categoryId": "c5"
     },
     {
         "id": 7,
         "title": "New paginated report authoring experience Preview August-5-2024",
         "slidesNumber": 3,
+        "desc": "The new 'Paginated Report Authoring Experience (Preview)' in Power BI allows users to design and edit paginated reports with an enhanced and improved interface. This update offers new features like multiple print formats, templates, and precise page management, making report creation faster, more efficient, and ideal for organizations needing detailed and formal reports.",
         "folderName": "New_paginated_report_authoring_experience_Preview_August_5,_2024",
-        "categoryId": "c10"
+        "downloadLink": "",
+        "categoryId": "c5"
     },
     {
         "id": 8,
-        "title": "Microsoft Software License Terms for Power BI Report Server ",
+        "title": "Microsoft Software License Terms",
         "slidesNumber": 11,
+        "desc": "We often overlook the terms, conditions, and licenses before installing software. Microsoft provides a notice for users to review and accept these terms before installation. As a Business Intelligence expert, it's important to familiarize yourself with the terms for the Power BI Report Server Developer edition.",
         "folderName": "Microsoft Software License Terms for Power BI Report Server ",
-        "categoryId": "c8"
+        "downloadLink": "",
+        "categoryId": "c12"
     },
     {
         "id": 9,
         "title": "How to Use Develop Custom Visual For Power BI",
         "slidesNumber": 10,
+        "desc": "Visuals are key tools for data analysis, and using various types is essential for accurate insights. Microsoft has gathered all visuals on their AppSource website, where major companies like PBIViz, MAQ, xViz, ZEBRA, and OKVIZ design, develop, and publish them. We will explore the skills needed to design, implement, develop, publish, and even monetize custom visuals.",
         "folderName": "How to Use Develop Custom Visual For Power BI",
+        "downloadLink": "",
         "categoryId": "c4"
     },
     {
         "id": 10,
         "title": "Key Performance Indicator or KPI's",
         "slidesNumber": 3,
+        "desc": "Access to a comprehensive reference of Key Performance Indicators (KPIs).",
         "folderName": "Key Performance Indicator or KPI's",
-        "categoryId": "c5"
+        "downloadLink": "https://drive.google.com/drive/folders/11Yu__km7X3MNSPTxB_B6sVlRLt8FDX-g?usp=sharing",
+        "categoryId": "c13"
     },
     {
         "id": 11,
         "title": "Unlimuited 3000 cell Import Data In Enter Data",
         "slidesNumber": 9,
+        "desc": "The 'Enter Data' feature in Power BI allows users to input data directly into PBIX files without needing external data source connections or refreshes. However, it has limitations, including a maximum of 3,000 cells for data entry.",
         "folderName": "Unlimuited 3000 cell Import Data In Enter Data",
-        "categoryId": "c2"
+        "downloadLink": "https://drive.google.com/drive/folders/1PKjtd4TUxJUR_3dpTe0PqhrFW6QwLQ6G?usp=sharing",
+        "categoryId": "c3"
     },
     {
         "id": 12,
         "title": "Power BI Reports Server Log Versions May-2024_2",
         "slidesNumber": 4,
+        "desc": "",
         "folderName": "Power BI Reports Server Log Versions May-2024_2",
-        "categoryId": "c13"
+        "downloadLink": "",
+        "categoryId": "c12"
     },
     {
         "id": 13,
         "title": "Transfer Microsoft Project Data directly to Power BI with PYTHON",
         "slidesNumber": 9,
+        "desc": "Microsoft Project is a powerful tool for project management, helping users efficiently plan, organize, and manage project resources. The challenge is how to transfer data outputs from Microsoft Project to Microsoft Power BI without using paid converters.",
         "folderName": "Transfer_Microsoft_Project_Data_directly_to_Power_BI_with_PYTHON",
+        "downloadLink": "https://drive.google.com/drive/folders/1Rgan7xWIb9iPhMsWCiO16KiB1eNTUNjl?usp=sharing",
         "categoryId": "c1"
     },
     {
         "id": 14,
         "title": "Create Dynamic SSRS Reports Using a Query as an Input Parameter",
         "slidesNumber": 14,
+        "desc": "Report Builder is a standalone reporting tool from Microsoft that allows users to design and generate paginated reports with various output formats like PDF, Word, Excel, and PowerPoint. The challenge is how to call different queries with varying titles and structures in a report, enabling the retrieval of updated data through parameters for various reports.",
         "folderName": "Create_Dynamic_SSRS_Reports_Using_a_Query_as_an_Input_Parameter",
-        "categoryId": "c12"
+        "downloadLink": "https://drive.google.com/drive/folders/1uEIdt9QxSR2uWYHRBSYF58n4WeX3GjKV?usp=sharing",
+        "categoryId": "c3"
     },
     {
         "id": 15,
         "title": "Shamsi and Miladi DimDate With M Query in Power Query",
         "slidesNumber": 8,
+        "desc": "",
         "folderName": "Shamsi and Miladi DimDate With M Query in Power Query",
-        "categoryId": "c11"
+        "downloadLink": "",
+        "categoryId": "c10"
     },
     {
         "id": 16,
         "title": "Create a Slicer to Compare Comogeneous Time Periods With DAX Code",
         "slidesNumber": 8,
+        "desc": "One of the most common methods for end-users to filter time-based data in dashboards and reports is through slicer visuals or other filtering visuals. The challenge is how to create slicer titles using DAX that align with business needs and user preferences.",
         "folderName": "Create_a_Slicer_to_Compare_Comogeneous_Time_Periods_With_DAX_Code",
-        "categoryId": "c9"
+        "downloadLink": "https://drive.google.com/drive/folders/1s5c1nkJFHc4YlD5vG9gLsS91V1oHxt_b?usp=sharing",
+        "categoryId": "c8"
     },
     {
         "id": 17,
         "title": "Fetch Data With Parameters With Direct Query Mode In Power Query",
         "slidesNumber": 15,
+        "desc": "Using parameters to retrieve data from a data source is crucial for end-users and database admins, allowing managed data use in organizational dashboards and reports. However, there are limitations, such as the use of this mechanism in the Report Server portal, so we must leverage specific tricks to overcome these challenges.",
         "folderName": "Fetch_Data_With_Parameters_With_Direct_Query_Mode_In_Power_Query",
-        "categoryId": "c2"
+        "downloadLink": "https://drive.google.com/drive/folders/13ACBPKWAN3w_FOhwNOy89Ux6ji0wepsn?usp=sharing",
+        "categoryId": "c10"
     },
     {
         "id": 18,
         "title": "Use PBI-Tools Export Data From PBIX File",
         "slidesNumber": 11,
+        "desc": "Power BI files are saved in PBIX format, and sometimes external software is needed to make changes to the source or retrieve parts of its structure. The challenge is how to export all data from the file to CSV with a single command or return components to the PBIX file after modifying the source.",
         "folderName": "Use PBI-Tools Export Data From PBIX File",
-        "categoryId": "c12"
+        "downloadLink": "",
+        "categoryId": "c11"
     },
     {
         "id": 19,
         "title": "Use Exchange Rate Online Web Scrolling in Power BI with PYTHON Script",
         "slidesNumber": 9,
+        "desc": "One of the key requirements in business intelligence projects is to display data according to a calendar by converting amounts into different currencies, necessitating the historical storage of various exchange rates in the data source. The challenge is how to automatically generate and store currency equivalents of monetary data daily, enabling their use in currency analysis.",
         "folderName": "Use_Exchange_Rate_Online_Web_Scrolling_in_Power_BI_with_PYTHON_Script",
+        "downloadLink": "https://drive.google.com/drive/folders/1GP5Z_LwsbIOiCKX1HpKIUlbQec7LR--V?usp=sharing",
         "categoryId": "c1"
     },
     {
         "id": 20,
         "title": "Use Synoptic Designer Panel Visual In Shape Graphics",
         "slidesNumber": 16,
+        "desc": "To create innovative data visualizations, including various maps and company products, we can use different tools and methods, one of which is the free Synoptic Panel visual shared by OKVIZ. This visual enables users to design and create graphical shapes in an online web environment.",
         "folderName": "Use Synoptic Designer Panel Visual In Shape Graphics",
+        "downloadLink": "https://drive.google.com/drive/folders/1_4p9r3d_bjGuK7572VmVAl8zNo0i8Vps?usp=sharing",
         "categoryId": "c4"
     },
     {
         "id": 21,
         "title": "Introduction DAX Studio",
         "slidesNumber": 3,
+        "desc": "",
         "folderName": "Introduction DAX Studio",
-        "categoryId": "c9"
+        "downloadLink": "",
+        "categoryId": "c8"
     },
     {
         "id": 22,
         "title": "API Service for Retrieving Exchange Rates for All Currencies",
         "slidesNumber": 10,
+        "desc": "In this tutorial, you'll learn how to use an API service to obtain exchange rates for various currencies. It will guide you on retrieving and analyzing exchange rate data for different dates and converting this data into a table in Power BI.",
         "folderName": "API Service for Retrieving Exchange Rates for All Currencies",
-        "categoryId": "c8"
+        "downloadLink": "https://drive.google.com/drive/folders/1WqHIHbLPoLMzxuq4GuI0Ne4LA1K25vRY?usp=sharing",
+        "categoryId": "c2"
     },
     {
         "id": 23,
         "title": "PBI Design Persian Theme JSON",
         "slidesNumber": 10,
+        "desc": "One of the challenges dashboard designers face in Power BI is accessing the components of the JSON file structure to create a Persian theme for data display. To address this, I have prepared a comprehensive file with 1,500 lines of code to facilitate font changes for titles and all components of Microsoft’s standard visuals.",
         "folderName": "PBI Design Persian Theme JSON",
-        "categoryId": "c4"
+        "downloadLink": "https://drive.google.com/drive/folders/15mHz6GT8uhCztQzHZFCiAj5k5UCmhKEg?usp=sharing",
+        "categoryId": "c6"
     },
     {
         "id": 24,
         "title": "Power BI Licenses",
         "slidesNumber": 20,
+        "desc": "",
         "folderName": "Power BI Licenses",
-        "categoryId": "c8"
+        "downloadLink": "",
+        "categoryId": "c7"
     },
     {
         "id": 25,
         "title": "Power BI Reports Server Log Versions May-2024_1",
         "slidesNumber": 4,
+        "desc": "",
         "folderName": "Power BI Reports Server Log Versions May-2024_1",
-        "categoryId": "c13"
+        "downloadLink": "",
+        "categoryId": "c12"
     }
 ]

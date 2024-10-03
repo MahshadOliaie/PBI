@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #F6F6F6;
+  margin-bottom: 40px;
 }
 
 a {
@@ -658,6 +659,8 @@ a {
 }
 .cardsSection__cards__card__about {
   padding: 0 15px;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 .cardsSection__cards__card__about__title {
   font-size: 25px;
@@ -678,6 +681,7 @@ a {
 .cardsSection__cards__card__about__desc {
   font-size: 15px;
   line-height: 1.5;
+  position: relative;
 }
 .cardsSection__cards__card__more {
   display: -webkit-box;
@@ -707,6 +711,16 @@ a {
 .cardsSection__cards__card__more__text {
   color: #0067B8;
   font-size: 14px;
+}
+
+.shadow {
+  background: -webkit-gradient(linear, right top, left top, color-stop(60%, white), to(rgba(255, 255, 255, 0.422)));
+  background: linear-gradient(to left, white 60%, rgba(255, 255, 255, 0.422));
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 18px;
+  width: 40%;
 }
 
 .mobileNav {

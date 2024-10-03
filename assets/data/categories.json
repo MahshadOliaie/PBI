@@ -24,27 +24,31 @@
         "title": "PBI General"
     },
     {
-        "id": "c8",
+        "id": "c7",
         "title": "Licenses"
     },
     {
-        "id": "c9",
+        "id": "c8",
         "title": "DAX"
     },
     {
-        "id": "c10",
+        "id": "c9",
         "title": "Map"
     },
     {
-        "id": "c11",
+        "id": "c10",
         "title": "Power Query"
     },
     {
-        "id": "c12",
+        "id": "c11",
         "title": "PBI Tools"
     },
     {
-        "id": "c13",
+        "id": "c12",
         "title": "PBI Report Server"
+    },
+    {
+        "id": "c13",
+        "title": "KPI's"
     }
 ]
