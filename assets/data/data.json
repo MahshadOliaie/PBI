@@ -84,7 +84,7 @@
         "id": 10,
         "title": "Key Performance Indicator or KPI's",
         "slidesNumber": 3,
-        "desc": "Access to a comprehensive reference of Key Performance Indicators (KPIs).",
+        "desc": "Key Performance Indicators (KPIs) are metrics used to measure the success and progress of an organization or project in achieving specific goals. These indicators assist in analyzing and evaluating performance and provide guidance for strategic and operational decision-making.",
         "folderName": "Key Performance Indicator or KPI's",
         "downloadLink": "https://drive.google.com/drive/folders/11Yu__km7X3MNSPTxB_B6sVlRLt8FDX-g?usp=sharing",
         "categoryId": "c13"
@@ -223,5 +223,212 @@
         "folderName": "Power BI Reports Server Log Versions May-2024_1",
         "downloadLink": "",
         "categoryId": "c12"
+    },
+    {
+        "id": 26,
+        "title": "Key Performance Indicator - Return on Equity (ROE)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator-( Return on Equity ( ROE",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 27,
+        "title": "Key Performance Indicator - Working Capital Ratio (WCR)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator-Working Capital Ratio (WCR)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 28,
+        "title": "Key Performance Indicator - Accounts Receivable Turnover (ART)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator-Accounts Receivable Turnover(ART)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 28,
+        "title": "Key Performance Indicator - Accounts Payable Turnover (APT)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator-Accounts Payable Turnover (APT)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 29,
+        "title": "Key Performance Indicator - Gross Profit Margin (GPM)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Gross Profit Margin (GPM)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 30,
+        "title": "Key Performance Indicator - Net Profit Margin (NPM)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Net Profit Margin (NPM)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 31,
+        "title": "Key Performance Indicator - Debt-to-Equity Ratio - DE",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Debt-to-Equity Ratio - DE",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 32,
+        "title": "Key Performance Indicator - Fixed Asset Turnover (FAT)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Fixed Asset Turnover (FAT)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 33,
+        "title": "Key Performance Indicator - Inventory Turnover",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Inventory Turnover",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 34,
+        "title": "Key Performance Indicator - Invoice Processing Time",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Invoice Processing Time",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 35,
+        "title": "Key Performance Indicator - Cash Burn Rate",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Cash Burn Rate",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 36,
+        "title": "Key Performance Indicator - Average Days Delinquent",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Average Days Delinquent",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 36,
+        "title": "Key Performance Indicator - Operating Cash Flow",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Operating Cash Flow",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 37,
+        "title": "Key Performance Indicator - Free Cash Flow (FCF)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Free Cash Flow (FCF)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 38,
+        "title": "Key Performance Indicator - (Overdue Ratio)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - (Overdue Ratio)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 39,
+        "title": "Key Performance Indicator - Days of Inventory Outstanding (DIO)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Days of Inventory Outstanding (DIO)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 40,
+        "title": "Key Performance Indicator - Days Sales Outstanding (DSO)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator -  Days Sales Outstanding (DSO)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 41,
+        "title": "Key Performance Indicator - Days Payables Outstanding (DPO)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Days Payables Outstanding (DPO)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 42,
+        "title": "Key Performance Indicator - Cash Conversion Cycle (CCC)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Cash Conversion Cycle (CCC)",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 43,
+        "title": "Key Performance Indicator - Cash Reserves in Days",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Cash Reserves in Days",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 44,
+        "title": "Key Performance Indicator - Customer Churn Rate",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Customer Churn Rate",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 45,
+        "title": "Key Performance Indicator - New Buyers Growth Rate",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - New Buyers Growth Rate",
+        "downloadLink": "",
+        "categoryId": "c13"
+    },
+    {
+        "id": 46,
+        "title": "Key Performance Indicator - Customer Lifetime Value (CLV)",
+        "slidesNumber": 6,
+        "desc": "",
+        "folderName": "Key Performance Indicator - Customer Lifetime Value (CLV)",
+        "downloadLink": "",
+        "categoryId": "c13"
     }
 ]

@@ -109,6 +109,7 @@ function renderSections(data) {
                 <div class="cardsSection__cards__card__image">
                     <img src="${itemImages[0]}" alt="">
                 </div>
+                <div class="card-text">
                 <div class="cardsSection__cards__card__about">
                     <h3 class="cardsSection__cards__card__about__title">${item.title}</h3>
                     <p class="cardsSection__cards__card__about__desc">${item.desc.slice(0,140)}${(item.desc)?`...<span class="shadow"></span>`:``}</p>
@@ -120,6 +121,7 @@ function renderSections(data) {
                         </svg>
                     </div>
                     <p class="cardsSection__cards__card__more__text">Learn more</p>
+                </div>
                 </div>
             </div>`
         }).join("")}
