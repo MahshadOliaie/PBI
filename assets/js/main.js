@@ -112,7 +112,7 @@ function renderSections(data) {
                 <div class="card-text">
                 <div class="cardsSection__cards__card__about">
                     <h3 class="cardsSection__cards__card__about__title">${item.title}</h3>
-                    <p class="cardsSection__cards__card__about__desc">${item.desc.slice(0,140)}${(item.desc)?`...<span class="shadow"></span>`:``}</p>
+                    <p class="cardsSection__cards__card__about__desc">${item.desc.slice(0, 140)}${(item.desc) ? `...<span class="shadow"></span>` : ``}</p>
                 </div>
                 <div class="cardsSection__cards__card__more" onclick="showData(${item.id})">
                     <div class="cardsSection__cards__card__more__svg">
@@ -145,7 +145,7 @@ function renderSections(data) {
     }).join("")
 
 
-    document.querySelector(".sectionsContainer").innerHTML = template
+    setTimeout(()=> {document.querySelector(".sectionsContainer").innerHTML = template} , 500)
     observer()
 
 
@@ -160,7 +160,6 @@ function observer() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 // The element is in view
-                console.log(`${entry.target.id}`);
                 document.querySelector(".activeNav")?.classList.remove("activeNav")
                 document.getElementById(`a${entry.target.id}`).classList.add("activeNav")
                 document.querySelector('.mobileNav__mainBox__title').textContent = document.getElementById(`a${entry.target.id}`).textContent
@@ -182,7 +181,7 @@ async function showData(id) {
     let data = cardsData.find(item => item.id === id)
     console.log(data)
     localStorage.clear()
-    localStorage.setItem("currentFile" , JSON.stringify(data))
+    localStorage.setItem("currentFile", JSON.stringify(data))
 
     await window.location.assign("/slides.html")
 }
