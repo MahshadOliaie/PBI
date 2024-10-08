@@ -145,7 +145,7 @@ function renderSections(data) {
     }).join("")
 
 
-    setTimeout(()=> {document.querySelector(".sectionsContainer").innerHTML = template} , 500)
+    document.querySelector(".sectionsContainer").innerHTML = template
     observer()
 
 
