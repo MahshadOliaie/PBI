@@ -3,7 +3,7 @@ let cardsData = []
 function getData() {
     fetch('/assets/data/data.json')
         .then(res => res.json())
-        .then(data => cardsData = data)
+        .then(data => { cardsData = data; renderCards() })
 }
 
 function getCategories() {
@@ -129,12 +129,13 @@ function renderSections(data) {
 }
 
 
-function renderCards(){
+function renderCards() {
+    debugger
     cardsData.map(card => {
         let itemImages = []
-            for (let i = 1; i <= card.slidesNumber; i++) {
-                itemImages.push(`/assets/images/${card.folderName}/Slide${i}.JPG`)
-            }
+        for (let i = 1; i <= card.slidesNumber; i++) {
+            itemImages.push(`/assets/images/${card.folderName}/Slide${i}.JPG`)
+        }
         document.querySelector(`#${card.categoryId} .cardsSection__cards`).innerHTML += ` <div class="cardsSection__cards__card">
                 <div class="cardsSection__cards__card__image">
                     <img src="${itemImages[0]}" alt="">
