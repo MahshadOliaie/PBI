@@ -130,7 +130,6 @@ function renderSections(data) {
 
 
 function renderCards() {
-    debugger
     cardsData.map(card => {
         let itemImages = []
         for (let i = 1; i <= card.slidesNumber; i++) {
