@@ -96,35 +96,9 @@ function sRight(id) {
 
 function renderSections(data) {
     let template = data.map(item => {
-        let filteredData = cardsData.filter(card => card.categoryId === item.id)
         return `<section class="cardsSection" id="${item.id}">
         <h2 class="cardsSection__title">${item.title}</h2>
         <div class="cardsSection__cards">
-        ${filteredData.map(item => {
-            let itemImages = []
-            for (let i = 1; i <= item.slidesNumber; i++) {
-                itemImages.push(`/assets/images/${item.folderName}/Slide${i}.JPG`)
-            }
-            return ` <div class="cardsSection__cards__card">
-                <div class="cardsSection__cards__card__image">
-                    <img src="${itemImages[0]}" alt="">
-                </div>
-                <div class="card-text">
-                <div class="cardsSection__cards__card__about">
-                    <h3 class="cardsSection__cards__card__about__title">${item.title}</h3>
-                    <p class="cardsSection__cards__card__about__desc">${item.desc.slice(0, 140)}${(item.desc) ? `...<span class="shadow"></span>` : ``}</p>
-                </div>
-                <div class="cardsSection__cards__card__more" onclick="showData(${item.id})">
-                    <div class="cardsSection__cards__card__more__svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                            <path d="M1 1L5 5L1 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <p class="cardsSection__cards__card__more__text">Learn more</p>
-                </div>
-                </div>
-            </div>`
-        }).join("")}
         </div>
           <div class="arrows">
                 <div class="arrows__prev" onclick="sLeft('${item.id}')">
@@ -146,9 +120,41 @@ function renderSections(data) {
 
 
     document.querySelector(".sectionsContainer").innerHTML = template
+
+    renderCards()
+
     observer()
 
 
+}
+
+
+function renderCards(){
+    cardsData.map(card => {
+        let itemImages = []
+            for (let i = 1; i <= card.slidesNumber; i++) {
+                itemImages.push(`/assets/images/${card.folderName}/Slide${i}.JPG`)
+            }
+        document.querySelector(`#${card.categoryId} .cardsSection__cards`).innerHTML += ` <div class="cardsSection__cards__card">
+                <div class="cardsSection__cards__card__image">
+                    <img src="${itemImages[0]}" alt="">
+                </div>
+                <div class="card-text">
+                <div class="cardsSection__cards__card__about">
+                    <h3 class="cardsSection__cards__card__about__title">${card.title}</h3>
+                    <p class="cardsSection__cards__card__about__desc">${card.desc.slice(0, 140)}${(card.desc) ? `...<span class="shadow"></span>` : ``}</p>
+                </div>
+                <div class="cardsSection__cards__card__more" onclick="showData(${card.id})">
+                    <div class="cardsSection__cards__card__more__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                            <path d="M1 1L5 5L1 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <p class="cardsSection__cards__card__more__text">Learn more</p>
+                </div>
+                </div>
+            </div>`
+    })
 }
 
 
