@@ -854,7 +854,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  gap: 25px;
+  gap: 20px;
   width: 21%;
   min-width: 280px;
 }
@@ -890,12 +890,13 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 40px;
+  gap: 30px;
   padding-bottom: 10px;
 }
 @media screen and (max-width: 1100px) {
   .personal__body {
     padding-bottom: 50px;
+    gap: 20px;
   }
 }
 .personal__image {
@@ -1093,8 +1094,8 @@ a {
   padding: 20px 0;
 }
 .personal__contact__contents svg {
-  width: 25px;
-  margin-bottom: 3px;
+  width: 23px;
+  margin-bottom: 2px;
 }
 .personal__contact__contents div {
   display: -webkit-box;
